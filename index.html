@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Đồng hồ sang trọng của Thụy Sĩ OMEGA</title>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,7 +22,7 @@
 				<nav style="padding: 17px; font-size: 20px; font-family: 'Overlock', cursive;">Menu</nav>
 			</div>
 			<div class="nav_t_c">
-				<img src="./img/logo_omega.png" alt="">
+				<a href="index.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 			</div>
 			<div class="nav_t_r" style="text-align: right; padding-right: 20px">
 				<a href="#"><i class="fa fa-search"></i></a>
@@ -37,9 +37,13 @@
 						<a href="#">CONSTELLATION</a>
 						<ul class="menu-area">
 							<h2 style="color: black">CONSTELLATION</h2><br>
-							<li>
-							<a class="more" href="#">ALL CONSTELLATION</a>
+							<div style="display: flex; padding-left:39%; width: 100% " class="img_nav">
+								<li style="padding-right: 20px;"><img src="./img/nav5.1.png" alt="">
+									<p>jdnfjnkasn</p>
 								</li>
+								<li style="padding-left: 20px;"><img src="./img/nav5.2.png" alt=""></li>
+							</div>
+							<a class="more" href="#">ALL CONSTELLATION</a>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -59,7 +63,7 @@
 					<li class="dropdown">
 						<a href="#">DE VILLE</a>
 						<ul class="menu-area">
-							<h2 style="color: black">DE VILLE</h2><br>
+							<h2 style="color: black; text-decoration: underline">DE VILLE</h2><br>
 							<a class="more" href="#">ALL DE VILLE</a>
 						</ul>
 					</li>
@@ -67,21 +71,41 @@
 						<a href="#">Find your OMEGA</a>
 						<ul class="menu-area">
 							<h2 style="color: black">Find your OMEGA</h2><br>
-							<a class="more" href="#">ALL SAGGESTIONS</a><a class="more" style="padding-left: 10px" href="#">WATCH FINDER</a>
+							<div style="display: flex;margin-left: 42% ">
+								<a class="more" href="#">ALL SAGGESTIONS</a>
+								<a class="more" style="padding-left: 10px" href="#">WATCH FINDER</a>
+							</div>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		
-			<!-- Carousel -->
-			
-						<img style="width: 100%; margin-top:45px" src="./img/banner_dong1.png">
-						
+		<!-- Carousel -->
+		<div style="margin-top: 67px" id="slides" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#slides" data-slide-to="0" class="active"></li>
+				<li data-target="#slides" data-slide-to="1"></li>
+				<li data-target="#slides" data-slide-to="2"></li>		
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/banner_dong1.png">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/banner_dong2.png">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/banner_dong3.png">
+				</div>
+			</div>
+		</div>
+		
+		
 		<div class="bonus">
 			<a href="#bn_text"><i class="fa fa-angle-down"></i></a>
 		</div>
-		<div style="margin-top: 80px" class="bn_text">
+		<div style="margin-top: 120px" class="bn_text">
 			<h1  id="bn_text">SEAMASTER PLANET OCEAN AMERICA’S CUP EDITION</h1>
 			<p >Discover the Seamaster Planet Ocean America’s Cup Edition, our stunning tribute to the 36th America’s Cup presented by Prada. A Master Chronometer certified timepiece with race-ready technology and timeless style, in the bold colours of the event’s logo.</p>
 			<button type="button" class="btn btn-outline-light btn-danger">
@@ -91,7 +115,7 @@
 		
 		<div class="main1">
 			<div style="text-align: center">
-				<img style="width: 90%; padding-top: 15%" src="./img/main1_1.png" alt="">
+				<img id="h1_1" style="width: 90%; padding-top: 15%" src="./img/main1_1.png" alt="">
 			</div>
 			<div>
 				<img style="width: 90%; text-align: center" src="./img/main1_2.png" alt="">
@@ -128,8 +152,8 @@
 			<div style="text-align: center">
 				<img style="width: 80%; padding-top: 15%" src="./img/main2_1.png" alt="">
 			</div>
-			<div style="margin-top: 10%">
-				<div style="display: flex">
+			<div class="main1_1" style="margin-top: 10%">
+				<div class="h2" style="display: flex">
 					<img style="width: 40%" src="./img/main2_2.png" alt="">
 					<nav style="padding-top: 20%">
 						<h4>MOONPHASE </h4>
@@ -138,7 +162,7 @@
 						<button style="background: white; border: 1px solid #C8C6C6; color: #535353; font-size: 12px; font-family: Arial; font-weight: 600; padding: 2px 10px; border-radius: 2px ">DETAILS</button>
 					</nav>
 				</div>
-				<div style="display: flex">
+				<div class="h2" style="display: flex">
 					<img style="width: 40%" src="./img/main2_3.png" alt="">
 					<nav style="padding-top: 20%">
 						<h4>SPEEDMASTER 38</h4>
@@ -159,7 +183,7 @@
 								DISCOVER THE COLLECTION
 			</button>
 		</div>
-		<div class="main1">
+		<div class="main2">
 			<div style="text-align: center">
 				<img style="width: 80%; padding-top: 15%" src="./img/main3_1.png" alt="">
 			</div>
@@ -176,32 +200,121 @@
 		
 		<h1 style="color: #DB0306; text-align: center; margin-top: 80px">NEWS & STORIES</h1>
 		<center><a href="#">See all articlet</a></center>
-		<div class="column-layout_container">
-			<div class="column-item">
+		<div class="row">
+			<div class="user1">
 				<img  style="margin: 10px 10px" src="./img/main4_1.png" alt=""><br>
-				SPORTS <br>
-				WINNING DESIGNS <br>
-				The ETNZ crew launch their cutting-edge boat wearing cool blue Planet Ocean chronographs
+				<small>SPORTS </small><br>
+				<span>WINNING DESIGNS </span><br>
+				<p>The ETNZ crew launch their cutting-edge boat wearing cool blue Planet Ocean chronographs.</p>
 			</div>
-			<div class="column-item">
-				<img id="1" src="./img/main4_2.png" alt=""><br>
-				WATCHES <br>
-				THE GOLDEN HOUR <br>
-				Enjoying the day’s fading light in long-lasting Moonshine gold
+			<div class="user2">
+				<img src="./img/main4_2.png" alt=""><br>
+				<small>WATCHES </small><br>
+				<span>THE GOLDEN HOUR </span><br>
+				<p>Enjoying the day’s fading light in long-lasting Moonshine gold.</p>
 			</div>
-			<div class="column-item">
+			<div class="user3">
 				<img src="./img/main4_3.png" alt=""><br>
-				PEOPLE <br>
-				WELCOMING THE WORLD’S HIGHEST MAN <br>
-				Pole vault star Mondo Duplantis visits OMEGA’s home of watchmaking in Switzerland.
-			</div>
-			<div class="column-item">
-				<img src="./img/main4_4.png" alt=""><br>
-				SPORTS <br>
-				COLLIN MORIKAWA WINS THE PGA CHAMPIONSHIP <br>
-				OMEGA’s friend makes history in San Francisco <br>
+				<small>PEOPLE </small><br>
+				<span>WELCOMING THE WORLD’S HIGHEST MAN </span><br>
+				<p>Pole vault star Mondo Duplantis visits OMEGA’s home of watchmaking in Switzerland.</p>
 			</div>
 		</div>
+		<div class="lienhe">
+			<div class="send_mail">
+				<h5>SUBSCRIBE TO OUR NEWSLETTER</h5><br>
+				<input type="text" placeholder="Enter your email address">
+				<button type="button" class="btn btn-outline-light btn-danger">SUBMIT</button>
+			</div>
+			<div class="lienket">
+				<h5>FOLLOW US</h5>
+				<div>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-facebook-f"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-youtube"></i>
+					<i class="fa fa-weixin"></i>
+					<i class="fa fa-pinterest-square"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row1">
+			<div>
+				<ul>
+					<h4>THE COLLECTION</h4>
+					<li><a href="#">Globemaster</a></li>
+					<li><a href="#">Constellation</a></li>
+					<li><a href="#">Diver 300M</a></li>
+					<li><a href="#">Aqua terra 150M</a></li>
+					<li><a href="#">Seamaster 300</a></li>
+					<li><a href="#">Planet Ocean 600M</a></li>
+					<li><a href="#">Moonwatch</a></li>
+					<li><a href="#">Dark side of the Moon</a></li>
+					<li><a href="#">Ladymatic</a></li>
+					<li><a href="#">Hour Vision</a></li>
+					<li><a href="#">Trésor</a></li>
+					<li><a href="#">Prestige</a></li>
+					<li><a href="#">Tourbillon</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<h4>FIND YOUR OMEGA</h4>
+					<li><a href="#">Women's Selection</a></li>
+					<li><a href="#">Men's Selection</a></li>
+					<li><a href="#">Gold Watches</a></li>
+					<li><a href="#">Chronograph Watches</a></li>
+					<li><a href="#">Master Chronometer</a></li><br><br>
+					<h4>PLANET OMEGA</h4>
+					<li><a href="#">Watchmaking</a></li>
+					<li><a href="#">Space</a></li>
+					<li><a href="#">Sport</a></li>
+					<li><a href="#">James Bond</a></li>
+					<li><a href="#">The OMEGA Museum</a></li>
+					<li><a href="#">Chronicle</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<h4>MASTER CHRONOMETER</h4>
+					<li><a href="#">Access my Test Results</a></li>
+					<li><a href="#">iPhone Card Scanner App</a></li><br><br>
+					<h4>STORE LOCATOR</h4>
+					<li><a href="#">Find a Store</a></li>
+					<li><a href="#">Locate me</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<h4>CUSTOMER SERVICE</h4>
+					<li><a href="#">Interventions and Prices</a></li>
+					<li><a href="#">Preserve your OMEGA</a></li>
+					<li><a href="#">Find a Service Center</a></li>
+					<li><a href="#">Order an Extract from the Archives</a></li>
+					<li><a href="#">Order a Catalogue</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">GLOSSARY</a></li><br><br>
+					<h4>MORE</h4>
+					<li><a href="#">Press Room</a></li>
+					<li><a href="#">Jobs</a></li>
+				</ul><br>
+				<button type="button" class="btn btn-outline-light btn-danger">CONTACT US</button>
+			</div>
+		</div>
+		<div class="footer">
+				<div>
+					<small style="padding-left: 15px">Copyright OMEGA SA. All rights reserved.</small>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Notice</a></li>
+						<li><a href="#">Cookie Notice</a></li>
+						
+					</ul>
+				</div>
+				<div style="color: #555555;margin-left: 40%">
+					<i style="color: #555555" class="fa fa-globe"></i>ENGLISH (INTERNETIONAL) <i style="color: #555555" class="fa fa-angle-up"></i>
+				</div>
+			</div>
 	</body>
 </html>
 
