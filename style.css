@@ -1,5 +1,6 @@
+@charset " uft-8";
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@charset "utf-8";
+
 /* CSS Document */
 *{
 	margin: 0;
@@ -88,7 +89,7 @@ body{
 	color:red;
 }
 .wrapper nav ul.menu-area{
-	padding: 40px 40px 0px 40px;
+	padding: 40px 0px 0px 0px;
 	background: #fff;	
 	text-align: left;
 	border-top: 1px solid #164c82;
@@ -99,6 +100,7 @@ body{
 	top: -9999px;
 	left: 0;
 }
+
 .menu-area h2{
 	text-align: center;
 	color: black;
@@ -108,6 +110,9 @@ body{
 	color: #8C8989;
 	text-decoration:underline;
 	text-align: center;
+}
+.menu-area a:hover{
+	color: red;
 }
 .wrapper nav ul li:hover ul.menu-area{
 	top: 100%;
@@ -190,7 +195,7 @@ body{
 	margin-bottom: 30px;
 }
 .row1 div{
-	padding: 3% 3%;
+	padding: 3% 5%;
 }
 .row1 h4{
 	font-size: 15px;
@@ -219,6 +224,16 @@ body{
 	color: red;
 }
 
+button{
+	color:#3E3B3B; 
+	border: 0.2px solid #3E3B3B; 
+	background: white; 
+	padding: 5px 20px;
+	cursor: pointer
+}
+.row .ctn_image img{
+	text-align: center;
+}
 
 
 /* Mobile <740px */
@@ -256,5 +271,38 @@ body{
 }
 /* Tablet >=740px and <1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
-	
 }
+/*Menu */
+	a.more{
+		padding: 20px 0 40px 0;
+		text-decoration:underline;
+	}
+
+/*Contener*/
+	
+	.ctn_image img{
+	width: 50%;
+	height: 90%;
+	}
+
+/* Footer*/
+	.send_mail input[type="text"]{
+		border:1px thin #8C8989;
+        background: none;
+        padding: 10px 5px;
+        width: 200px;
+        color: black;
+        transform: 0.25px;
+        
+	}
+	.send_mail input[type="submit"]{
+        text-align: center;
+        width: 80px;
+        padding: 10px 10px;
+		transform: 0.25px;
+		background: rgb(180, 17, 17);
+		color: white;
+		border: none;
+	}
+
+
