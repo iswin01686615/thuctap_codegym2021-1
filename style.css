@@ -1,4 +1,6 @@
-@charset "utf-8";
+@charset " uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 /* CSS Document */
 *{
 	margin: 0;
@@ -60,7 +62,7 @@ body{
 	text-align: center;
 	padding: 0;
 }
-.wrapper nav a{
+.wrapper nav .dropdown a{
 	display: block;
 	color: black;
 	font-family: 'Overlock', cursive;
@@ -87,28 +89,33 @@ body{
 	color:red;
 }
 .wrapper nav ul.menu-area{
-	padding: 40px 40px 0px 40px;
+	padding: 40px 0px 0px 0px;
 	background: #fff;	
 	text-align: left;
 	border-top: 1px solid #164c82;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.6);
 	z-index: 1;
 	position: absolute;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
 	top: -9999px;
 	left: 0;
 }
+
+.menu-area h2{
+	text-align: center;
+	color: black;
+	font-family: 'Caveat', cursive;
+}
+.menu-area a{
+	color: #8C8989;
+	text-decoration:underline;
+	text-align: center;
+}
+.menu-area a:hover{
+	color: red;
+}
 .wrapper nav ul li:hover ul.menu-area{
 	top: 100%;
-}
-a.more{
-	text-decoration:inherit;
 }
 
 
@@ -144,18 +151,158 @@ a.more{
 	display: flex;
 	margin-top: 40px;
 }
-.member{
+.main2{
+	width: 100%;
+	display: flex;
+	margin-top: 40px;
+}
+.row{
 	width: 100%;
 	display:flex;
+	text-align: center;
 }
-.member div{
-	width: 20%;
+.row span{
+	color: red;
+}
+.row p{
+	color:#3C3A3A;
+}
+.row div{
+	width: 30%;
 	margin: 10px 10px;
 }
-.member #1{
+.row img{
 	width: 100%;
-	margin: 40px 20px 20px 20px;
+	margin: 3%;
+}
+.lienhe{
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+.lienket, .send_mail{
+	width: 100%;
+	margin: 5% 5%;
+}
+.lienket i, h5{
+	color: #555555;
+}
+.row1{
+	width: 100%;
+	display: flex;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.row1 div{
+	padding: 3% 5%;
+}
+.row1 h4{
+	font-size: 15px;
+}
+.row1 ul, li , a{
+	list-style: none;
+	color: #555555;
+	text-decoration: none;
+}.footer{
+	width: 100%;
+	display: flex;
+	background: #F9F9F9;
+}
+.footer ul{
+	list-style: none; 
+	display: flex;
+}
+.footer ul li{
+	padding: 5px 15px;
+}
+.footer ul li a{
+	text-decoration: none;
+	font-size: 12px;
+}
+.footer ul li a:hover{
+	color: red;
 }
 
+button{
+	color:#3E3B3B; 
+	border: 0.2px solid #3E3B3B; 
+	background: white; 
+	padding: 5px 20px;
+	cursor: pointer
+}
+.row .ctn_image img{
+	text-align: center;
+}
+
+
+/* Mobile <740px */
+@media only screen and (max-width: 46.1875em){
+	.main2{
+		display: block;
+	}
+}
+/* tablet <960px */
+@media only screen and (max-width: 60em){
+	.wrapper, .nav_t_l nav, .fa-map-marker, .row1, .footer{
+		display: none;
+	}
+	.main1{
+		display: block;
+	}
+	.img{
+		width: 80%;
+		margin: 20px 10px;
+	}
+	#h1_1{
+		margin-bottom: 20px;
+		width: 60%;
+	}
+	.h2{
+		display: block;
+		font-size: 10px;
+	}
+	.main1_1{
+		display: flex;
+	}
+	.lienhe{
+		display: block;
+	}
+}
+/* Tablet >=740px and <1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+}
+/*Menu */
+	a.more{
+		padding: 20px 0 40px 0;
+		text-decoration:underline;
+	}
+
+/*Contener*/
+	
+	.ctn_image img{
+	width: 50%;
+	height: 90%;
+	}
+
+/* Footer*/
+	.send_mail input[type="text"]{
+		border:1px thin #8C8989;
+        background: none;
+        padding: 10px 5px;
+        width: 200px;
+        color: black;
+        transform: 0.25px;
+        
+	}
+	.send_mail input[type="submit"]{
+        text-align: center;
+        width: 80px;
+        padding: 10px 10px;
+		transform: 0.25px;
+		background: rgb(180, 17, 17);
+		color: white;
+		border: none;
+	}
 
 
