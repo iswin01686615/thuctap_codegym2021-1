@@ -245,9 +245,6 @@ button{
 	.wrapper, .nav_t_l nav, .fa-map-marker, .row1, .footer{
 		display: none;
 	}
-	.left1{
-		display: none;
-	}
 	#hidden{
 		display: none;
 	}
@@ -275,9 +272,6 @@ button{
 }
 /* Tablet >=960px and <1024px */
 @media only screen and (min-width: 60em) and (max-width: 63.9375em){
-	.left{
-		display: none;
-	}
 }
 /*Menu */
 	a.more{
@@ -342,16 +336,6 @@ button{
 	display: none;
 	animation: fadeIn linear 0.2s;
 }
-.nav__overlay1{
-	position: fixed;
-	top: 130px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0,0,0,0.3);
-	display: none;
-	animation: fadeIn linear 0.2s;
-}
 
 .nav__input:checked ~ .nav__overlay{
 	display: block;
@@ -371,20 +355,6 @@ button{
 		opacity: 1;
 	}
 }
-
-.left1{
-	position: fixed;
-	top: 130px;
-	left: 0;
-	bottom: 0;
-	width: 320px;
-	max-width: 100%;
-	background: white;
-	transform: translateX(-100%);
-	opacity: 0;
-	transition: all linear 0.2s;
-	border-top: 2px solid red;
- }
 .left{
 	position: fixed;
 	top: 80px;
