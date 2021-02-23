@@ -270,8 +270,13 @@ button{
 	#hidden{
 		display: none;
 	}
+<<<<<<< HEAD
 	h1{
 		margin-top: 0px;
+=======
+	#hidden{
+		display: none;
+>>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
 	}
 	.main1{
 		display: block;
@@ -335,6 +340,7 @@ button{
 	width: 100%; 
 	margin-top: 0px;
 }
+<<<<<<< HEAD
 .account{
 	width: 100%; 
 	height: 550px; 
@@ -342,6 +348,10 @@ button{
 h1{
 	margin-top: 80px;
 }
+=======
+
+
+>>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
 
 
 
@@ -429,10 +439,17 @@ h1{
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+
+
+
+
+>>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
 .side-bar{
  background: rgba(255, 255, 255, 0.1);
  backdrop-filter: blur(15px);
@@ -536,6 +553,7 @@ h1{
    line-height: 60px;
  }
 }
+<<<<<<< HEAD
 
 
 
@@ -545,3 +563,5 @@ table{
 td{
 	width: 30%;
 }
+=======
+>>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
