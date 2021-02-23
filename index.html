@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>De Ville</title>
-	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
     <link type="text/css" rel="stylesheet" href="style.css">
     <style>
@@ -14,9 +14,40 @@
 
 <body>
 	<div class="nav_top">
-		<div class="nav_t_l" style="display: flex">
-			<i class="fa fa-bars"></i> 
-			<nav style="padding: 17px; font-size: 20px; font-family: 'Overlock', cursive;">Menu</nav>
+		<div class="nav_t_l">
+			<div class="nav">
+               
+				<label for="nav-mb-input" class="nav_bars-btn">
+					<i style="cursor: pointer" class="fas fa-bars"></i>
+				</label>
+				
+				<input type="checkbox" hidden name="" class="nav__input" id="nav-mb-input">
+				<label id="hidden" for="nav-mb-input" style="color: black; cursor: pointer">Menu</label>
+				<label for="nav-mb-input" class="nav__overlay"></label>
+				<!-- Nav Mobile -->
+				<div class="left">
+					<div class="accordion">
+						<div class="accordion-item">
+							<div class="item">
+								<a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+							 	<div class="sub-menu">
+									<a href="#" class="sub-item">Sub Item 01</a>
+									<a href="#" class="sub-item">Sub Item 02</a>
+									<a href="#" class="sub-item">Sub Item 03</a>
+								</div>
+						    </div>
+							<div class="item">
+								<a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+							 	<div class="sub-menu">
+									<a href="#" class="sub-item">Sub Item 01</a>
+									<a href="#" class="sub-item">Sub Item 02</a>
+									<a href="#" class="sub-item">Sub Item 03</a>
+								</div>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+            </div>
 		</div>
 		<div class="nav_t_c">
 			<a href="deville.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
@@ -210,8 +241,8 @@
 
 	<!-- Carousel -->
 		
-				<div style="width: 100%" class="carousel-item active">
-					<img style="width: 100%; margin-top: 67px" src="./img/banner_dong1.png">
+		<div id="banner">
+					<img  style="width: 100%" src="./img/banner_dong1.png">
 				</div>
 				
 		
@@ -339,11 +370,11 @@
 		<div class="send_mail">
 			<h5>SUBSCRIBE TO OUR NEWSLETTER</h5><br>
 			<input type="text" placeholder="Enter your email address">
-			<input type="submit" value="SUBMIT"></input>
+			<input type="submit" value="SUBMIT"/>
 		</div>
 		<div class="lienket">
 			<h5>FOLLOW US</h5>
-			<div>
+			<div style="color: #423E3E">
 				<i class="fa fa-instagram"></i>
 				<i class="fa fa-facebook-f"></i>
 				<i class="fa fa-twitter"></i>
@@ -432,6 +463,15 @@
 		</div>
 
 
+		<script type="text/javascript">
+			   $(document).ready(function(){
+				 //jquery for toggle sub menus
+				 $('.sub-btn').click(function(){
+				   $(this).next('.sub-menu').slideToggle();
+				   $(this).find('.dropdown').toggleClass('rotate');
+				 });
+			   });
+			   </script>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
