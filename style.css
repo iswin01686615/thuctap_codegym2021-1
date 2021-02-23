@@ -26,8 +26,6 @@ body{
 	width: 33%;
 }
 .fa{
-	color: black;
-	font-size: 20px;
 	cursor: pointer;
 	padding-left: 15px;
 	padding-top: 20px;
@@ -39,7 +37,7 @@ body{
 .wrapper{
 	width: 100%;
 	text-align: center;
-	height: 50px;
+	line-height: 20px;
 	position: absolute;
 	z-index: 10;
 }
@@ -83,7 +81,7 @@ body{
 	float: right;
 	content: '';
 	margin-left: 10px;
-	margin-top: 8px;
+	margin-top: 0px;
 }
 .wrapper nav > ul > li > a:hover{
 	color:red;
@@ -247,6 +245,12 @@ button{
 	.wrapper, .nav_t_l nav, .fa-map-marker, .row1, .footer{
 		display: none;
 	}
+	.left1{
+		display: none;
+	}
+	#hidden{
+		display: none;
+	}
 	.main1{
 		display: block;
 	}
@@ -269,8 +273,11 @@ button{
 		display: block;
 	}
 }
-/* Tablet >=740px and <1024px */
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+/* Tablet >=960px and <1024px */
+@media only screen and (min-width: 60em) and (max-width: 63.9375em){
+	.left{
+		display: none;
+	}
 }
 /*Menu */
 	a.more{
@@ -304,5 +311,227 @@ button{
 		color: white;
 		border: none;
 	}
+#banner{
+	width: 100%; 
+	margin-top: 0px;
+}
 
 
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.nav_bars-btn{
+	width: 28px;
+	height: 28px;
+	margin-left: 10px;
+	padding-top: 5px;
+	color: black;
+}
+.nav__overlay{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	display: none;
+	animation: fadeIn linear 0.2s;
+}
+.nav__overlay1{
+	position: fixed;
+	top: 130px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	display: none;
+	animation: fadeIn linear 0.2s;
+}
+
+.nav__input:checked ~ .nav__overlay{
+	display: block;
+	
+}
+.nav__input:checked ~ .left{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.left1{
+	position: fixed;
+	top: 130px;
+	left: 0;
+	bottom: 0;
+	width: 320px;
+	max-width: 100%;
+	background: white;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all linear 0.2s;
+	border-top: 2px solid red;
+ }
+.left{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	bottom: 0;
+	width: 320px;
+	max-width: 100%;
+	background: white;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all linear 0.2s;
+	border-top: 2px solid red;
+ }
+.accordion-item-header {
+  padding: 0rem 1rem 0rem 1rem;
+  min-height: 2.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+  color: #0286CD;
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease-out 0.2s;
+}
+.accordion-item-body-content {
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  line-height: 1rem;
+}
+.accordion-item-body-content ul{
+  padding-left: 20px; 
+  list-style: none;
+}
+.accordion-item-body-content ul a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.side-bar{
+ background: rgba(255, 255, 255, 0.1);
+ backdrop-filter: blur(15px);
+ width: 290px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -100%;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+
+.side-bar.active{
+ left: 0;
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 80px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+ background: #8621F8;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: rgba(255, 255, 255, 0.1);
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.close-btn{
+ position: absolute;
+ color: #fff;
+ font-size: 20px;
+ right: 0;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.menu-btn{
+ position: absolute;
+ color: #fff;
+ font-size: 20px;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.main{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+}
+
+.main h1{
+ color: rgba(255, 255, 255, 0.8);
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
+}
+
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
+}
