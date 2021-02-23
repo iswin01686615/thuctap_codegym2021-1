@@ -267,6 +267,7 @@ button{
 	.footer ul{
 		align-content: center;
 	}
+<<<<<<< HEAD
 	#hidden{
 		display: none;
 	}
@@ -274,9 +275,14 @@ button{
 	h1{
 		margin-top: 0px;
 =======
+=======
+>>>>>>> 4a68dbe37f953df936070df42a9c80612b58a52c
 	#hidden{
 		display: none;
 >>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
+	}
+	h1{
+		margin-top: 0px;
 	}
 	.main1{
 		display: block;
@@ -341,6 +347,9 @@ button{
 	margin-top: 0px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a68dbe37f953df936070df42a9c80612b58a52c
 .account{
 	width: 100%; 
 	height: 550px; 
@@ -348,10 +357,13 @@ button{
 h1{
 	margin-top: 80px;
 }
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
+=======
+>>>>>>> 4a68dbe37f953df936070df42a9c80612b58a52c
 
 
 
@@ -554,6 +566,9 @@ h1{
  }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a68dbe37f953df936070df42a9c80612b58a52c
 
 
 
@@ -563,5 +578,8 @@ table{
 td{
 	width: 30%;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 4e4e49da698ddb20271cdecdd1291cfcba41844f
+=======
+>>>>>>> 4a68dbe37f953df936070df42a9c80612b58a52c
