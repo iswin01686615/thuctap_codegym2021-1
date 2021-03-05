@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>OMEGA Swiss Luxury Watched</title>
+<title>Seamaster</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	
 	<div class="nav_top">
 		<div class="nav_t_l">
 			<div class="nav">
@@ -311,161 +312,61 @@
         </nav>
 	</div>
 	
-	<!-- Carousel -->
-		
-		<div id="banner">
-			<div class="slider">
-			  <div class="slides">
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<div class="slide first">
-				  <img src="./img/banner_dong1.png" alt="">
+	<div id="banner">
+		<img style="width: 100%" src="./img/finder_banner.png" alt="">
+	</div>
+	<div style="display:flex;width: 100%;text-align: center;height: 60px;border-bottom: 2px solid #6A6A6A;margin-top: -5px;">
+		<h2 style="width: 93%;line-height: 60px;color: #3C3A3A;">Search by Reference</h2>
+		<a class="search_finder"  href="h1_finder">
+			<i class="fas fa-search"></i>
+		</a>
+	</div>
+	<div style="display: flex;width: 100%;">
+		<div class="left_watch_finder">
+			<button style="background: #E8E8E8; padding: 15px 30px;border: none;font-size: 14px; font-weight: 500;margin-bottom: 30px">WATCHES DISPLAYED</button>
+			<h1 id="h1_finder" style="color: #726E6E; font-weight: 100; margin-bottom: 30px;">Filters</h1>
+				<div id="wapper_f">
+					<div class="accordion_f">
+						<div class="accordion_f-item active">
+							<div class="accordion_f-header">
+								<h3>Tiêu đề 1</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								bjksbcl kv; dsk;vd;sv;dk vksd ;
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>Tiêu đề 2</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								bjksbcl kv; dsk;vd;sv;dk vksd ;
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>Tiêu đề 3</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								bjksbcl kv; dsk;vd;sv;dk vksd ;
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="slide">
-				  <img src="./img/banner_dong2.png" alt="">
-				</div>
-				<div class="slide">
-				  <img src="./img/banner_dong3.png" alt="">
-				</div>
-				<div class="navigation-auto">
-				  <div for="radio1" class="auto-btn1"></div>
-				  <div for="radio2" class="auto-btn2"></div>
-				  <div for="radio3" class="auto-btn3"></div>
-				</div>
-			  </div>
-			</div>
-</div>
-				
-		
-		
-		<div class="bonus">
-			<a href="#bn_text"><i class="fa fa-angle-down"></i></a>
+			<h1 style="color: #726E6E; font-weight: 100; margin-bottom: 30px; margin-top: 100px;">Discover also</h1>
+			<button>Men's selection</button>
+			<button>Women's selection</button>
+			<button>Dive Watches</button><br>
+			<button>Sport Watches</button>
 		</div>
-		<div style="margin-top: 120px" class="bn_text">
-			<h1  id="bn_text">SEAMASTER PLANET OCEAN AMERICA’S CUP EDITION</h1>
-			<p >Discover the Seamaster Planet Ocean America’s Cup Edition, our stunning tribute to the 36th America’s Cup presented by Prada. A Master Chronometer certified timepiece with race-ready technology and timeless style, in the bold colours of the event’s logo.</p>
-			<button type="button" class="btn btn-outline-light btn-danger">
-								DISCOVER THE WATCH
-			</button>
+		<div class="right_watch_finder">
+			hihi
 		</div>
-		
-		<div class="main1">
-			<div style="text-align: center">
-				<img id="h1_1" style="width: 90%; padding-top: 15%" src="./img/main1_1.png" alt="">
-			</div>
-			<div>
-				<img style="width: 90%; text-align: center" src="./img/main1_2.png" alt="">
-				<div style="display: flex">
-					<img style="width: 40%" src="./img/main1_3.png" alt="">
-					<nav style="padding-top: 20%">
-						<h4>PLANET OCEAN 600M</h4>
-						Co-Axial Masteer Chronometer <br>
-						43.5mm <br>
-						<span style="color: red">America's Cup</span> <br>
-						<button style="padding: 5px;font-size: 12px;margin-top: 10px;" type="button" class="btn btn-outline-light btn-danger">
-								DETAILS
-						</button>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div style="margin-top: 80px" class="bn_text">
-			<span style="font-size: 22px; color: #3D3B3C">CO-AXIAL MASTER CHRONOMETER</span>
-			<h1>THE PERFECT MECHANICAL MOVEMENT</h1>
-			<p>With every small part working in synchronised harmony, OMEGA’s Co-Axial Master Chronometer calibres are a symphony of precision and performance. The very same excellence that defines our entire brand universe.</p>
-		</div>
-		
-		<div style="width: 100%; height: 500px; text-align: center" class="video_demo">
-			<iframe width="70%" height="90%" src="https://www.youtube.com/embed/4ygaLJBiYhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div style="margin-top: 80px" class="bn_text">
-			<h1>OUR VALENTINE’S DAY SELECTION</h1>
-			<p >Finding the perfect gift can be difficult. Not as hard as bringing back the Moon perhaps, but still, a significant challenge. To help, we’ve curated a special Valentine’s Day selection to guide and inspire. You won’t find a Moon, but you will find a Moonwatch.</p>
-			<button type="button" class="btn btn-outline-light btn-danger">
-								DISCOVER MORE
-			</button>
-		</div>
-		
-		<div class="main1">
-			<div style="text-align: center">
-				<img style="width: 80%; padding-top: 15%" src="./img/main2_1.png" alt="">
-			</div>
-			<div class="main1_1" style="margin-top: 10%">
-				<div class="h2" style="display: flex">
-					<img style="width: 40%" src="./img/main2_2.png" alt="">
-					<nav style="padding-top: 20%">
-						<h4>MOONPHASE </h4>
-						Co‑Axial Master Chronometer <br>
-						Moonphase Chronograph 44.25 mm <br>
-						<button style="padding: 5px;font-size: 12px;margin-top: 10px;" type="button" class="btn btn-outline-light btn-danger">
-								DETAILS
-					  </button>
-					</nav>
-				</div>
-				<div class="h2" style="display: flex">
-					<img style="width: 40%" src="./img/main2_3.png" alt="">
-					<nav style="padding-top: 20%">
-						<h4>SPEEDMASTER 38</h4>
-						Co‑Axial Chronometer Chronograph <br>
-						38 mm<br>
-						<button style="padding: 5px;font-size: 12px;margin-top: 10px;" type="button" class="btn btn-outline-light btn-danger">
-								DETAILS
-					  </button>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div style="width: 100%; margin-top: 70px" class="img_demo">
-			<img style="width: 100%" src="./img/main3.png" alt="">
-		</div>
-		<div style="margin-top: 80px" class="bn_text">
-			<h1>DE VILLE PRESTIGE GENTS' COLLECTION</h1>
-			<p >The De Ville Prestige collection is world-renowned for its pure, classic and timeless design - each timepiece represents a treasure that completes any wardrobe.</p>
-			<button type="button" class="btn btn-outline-light btn-danger">
-								DISCOVER THE COLLECTION
-			</button>
-		</div>
-		<div class="main2">
-			<div style="text-align: center">
-				<img style="width: 80%; padding-top: 15%" src="./img/main3_1.png" alt="">
-			</div>
-				<div style="display: flex">
-					<img style="width: 60%" src="./img/main3_2.png" alt="">
-					<nav style="padding-top: 55%">
-						<h4>PRESTIGE</h4>
-						Co‑Axial Chronometer Power<br>
-						Reserve 39.5 mm <br>
-						<button style="padding: 5px;font-size: 12px;margin-top: 10px;" type="button" class="btn btn-outline-light btn-danger">
-								DETAILS
-					  </button>
-					</nav>
-				</div>
-		</div>
-		
-		<h1 style="color: #DB0306; text-align: center; margin-top: 80px">NEWS & STORIES</h1>
-		<center><a href="#">See all articlet</a></center>
-		<div class="row">
-			<div class="user1">
-				<img  style="margin: 10px 10px" src="./img/main4_1.png" alt=""><br>
-				<small>SPORTS </small><br>
-				<span>WINNING DESIGNS </span><br>
-				<p>The ETNZ crew launch their cutting-edge boat wearing cool blue Planet Ocean chronographs.</p>
-			</div>
-			<div class="user2">
-				<img src="./img/main4_2.png" alt=""><br>
-				<small>WATCHES </small><br>
-				<span>THE GOLDEN HOUR </span><br>
-				<p>Enjoying the day’s fading light in long-lasting Moonshine gold.</p>
-			</div>
-			<div class="user3">
-				<img src="./img/main4_3.png" alt=""><br>
-				<small>PEOPLE </small><br>
-				<span>WELCOMING THE WORLD’S HIGHEST MAN </span><br>
-				<p>Pole vault star Mondo Duplantis visits OMEGA’s home of watchmaking in Switzerland.</p>
-			</div>
-		</div>
-    <!--Footer-->
+	</div>
+	<!--footer-->
 	<div style="background:#E2DDDD" class="lienhe">
 		<div class="send_mail">
 			<h5>SUBSCRIBE TO OUR NEWSLETTER</h5><br>
@@ -563,21 +464,13 @@
 		</div>
 
 
-		<script type="text/javascript">
-		var counter = 1;
-		setInterval(function(){
-		  document.getElementById('radio' + counter).checked = true;
-		  counter++;
-		  if(counter > 3){
-			counter = 1;
-		  }
-		}, 5000);
-		</script>
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="style.js"></script>
 	<link type="text/css" rel="stylesheet" href="style.css">
+
+	
 </body>
 </html>

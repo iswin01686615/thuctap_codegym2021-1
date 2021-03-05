@@ -27,36 +27,109 @@
 				<label for="nav-mb-input" class="nav__overlay"></label>
 				<!-- Nav Mobile -->
 				<div class="left">
-					<div class="accordion">
-						<div class="accordion-item">
-							<div class="item">
-								<a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
-							 	<div class="sub-menu">
-									<a href="#" class="sub-item">Sub Item 01</a>
-									<a href="#" class="sub-item">Sub Item 02</a>
-									<a href="#" class="sub-item">Sub Item 03</a>
-								</div>
-						    </div>
-							<div class="item">
-								<a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
-							 	<div class="sub-menu">
-									<a href="#" class="sub-item">Sub Item 01</a>
-									<a href="#" class="sub-item">Sub Item 02</a>
-									<a href="#" class="sub-item">Sub Item 03</a>
-								</div>
-						    </div>
-					  	</div>
-					</div>
+					 <main id="accordion">
+						<section style="margin-top: 60px;" id="item1">
+							<a href="#item1"><h5>WATCHES</h5></a>
+							<ul class="item">
+								<li><a href="#">CONSTELLATION</a></li>
+								<li><a href="#">SEAMASTER</a></li>
+								<li><a href="#">SPEEDMASTER</a></li>
+								<li><a href="#">DE VILLE</a></li>
+								<li><a href="#">Find your Omega</a></li>
+								<li><a href="#">Women's Selection</a></li>
+								<li><a href="#">Men's Selection</a></li>
+								<li>
+									<button type="button" class="btn btn-outline-light btn-danger">
+										WATCH FINDER
+									</button>
+								</li>
+							</ul>
+						</section>
+
+						<section id="item2">
+							<a href="#item2"><h5>NATO STRAPS</h5></a>
+						</section>
+
+						<section id="item3">
+							<a href="#item3"><h5>WATCH STRAPS</h5></a>
+						</section>
+						 
+						 <section id="item4">
+							<a href="#item4"><h5>FINE JEWELLERY</h5></a>
+							<ul class="item">
+								<li><a href="#">CONSTELLATION</a></li>
+								<li><a href="#">AQUA SWING</a></li>
+								<li><a href="#">OMEGA FLOWER</a></li>
+								<li><a href="#">LADYMATIC</a></li>
+								<li><a href="#">OMEGA DEWDROP</a></li>
+							</ul>
+						</section>
+
+						<section style="padding-bottom: 20px; border-bottom: 1px solid #737373;" id="item5">
+							<a href="#item5"><h5>ACCESSORIES</h5></a>
+							<ul class="item">
+								<li><a href="#">FINE LEATHER</a></li>
+								<li><a href="#">BRACELETS</a></li>
+								<li><a href="#">CUFFLINKS</a></li>
+								<li><a href="#">EYEWEAR</a></li>
+								<li><a href="#">BELTS</a></li>
+								<li><a href="#">KEYHOLDERS & OTHERS</a></li>
+								<li><a href="#">FINE FRAGRANCE</a></li>
+							</ul>
+						</section>
+
+						<section style="margin-top: 20px;" id="item6">
+							<a href="#item6"><h5>PLANET OMEGA</h5></a>
+							
+						</section>
+						 
+						 <section id="item7">
+							<a href="#item7"><h5>NEWS & STORIES</h5></a>
+							
+						</section>
+
+						<section id="item8">
+							<a href="#item8"><h5>STORE LOCATOR</h5></a>
+							
+						</section>
+
+						<section id="item9">
+							<a href="#item9"><h5>CUSTOMER SERVICE</h5></a>
+							<ul class="item">
+								<li><a href="#">INTERVENTIONS & PRICES</a></li>
+								<li><a href="#">FINDING A SERVICE CENTRE</a></li>
+								<li><a href="#">5‑YEAR WARRANTY</a></li>
+								<li><a href="#">USER MANUALS</a></li>
+								<li><a href="#">CERTIFICATES & EXTRACTS</a></li>
+								<li><a href="#">PRESERVE YOUR OMEGA</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">GLOSSARY</a></li>
+								<li><a href="#">ORDER A CATALOG</a></li>
+								<li>
+									<button type="button" class="btn btn-outline-light btn-danger">
+										CONTACT US
+									</button>
+								</li>
+							</ul>
+						</section>
+						 
+					</main>
 				</div>
             </div>
 		</div>
 		<div class="nav_t_c">
-			<a href="deville.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
+			<a href="index.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 		</div>
 		<div class="nav_t_r" style="text-align: right; padding-right: 20px">
-			<a href="#"><i class="fa fa-search"></i></a>
+			<div class="search-box">
+				<input class="search-txt" type="text" name="" placeholder="Type to search...">
+				<a class="search-btn" href="#">
+				<i class="fas fa-search"></i>
+				</a>
+			</div>
 			<a href="#"><i class="fa fa-map-marker"></i></a>
-			<a href="account.html"><i class="fa fa-user"></i></a>
+			<a href="account.php"><i class="fa fa-user"></i></a>
+			<a style="margin-left: 10px;" href="#"><i class="fas fa-cart-plus"></i></a>
         </div>
 	</div>
 	
@@ -89,7 +162,7 @@
                       
                             </div>
                         </div><br><br>
-                            <a class="more" href="#">ALL CONSTELLATION</a>
+                            <a style="text-decoration: underline; padding: 20px 40px;" class="more" href="constellation.php">ALL CONSTELLATION</a>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -120,7 +193,7 @@
                       
                             </div>
                         </div><br><br>
-                        <a class="more" href="#">ALL SEAMASTER</a>
+                        <a style="text-decoration: underline; padding: 20px 40px;" class="more" href="seamaster.php">ALL SEAMASTER</a>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -153,7 +226,7 @@
 								<a href="#">INSTRUMENTS</a>
                             </div>
                         </div><br><br>
-                        <a class="more" href="#">ALL SPEEDMASTER</a>
+                        <a style="text-decoration: underline; padding: 20px 40px;" class="more" href="speedmaster.php">ALL SPEEDMASTER</a>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -182,7 +255,7 @@
 								<a href="#">TOURBILLON</a>
                             </div>
                         </div><br><br>
-                        <a class="more" href="deville.html">ALL DE VILLE</a>
+                        <a style="text-decoration: underline; padding: 20px 40px;" class="more" href="DeVille.php">ALL DE VILLE</a>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -229,10 +302,10 @@
 								</ul>
 							</div>
 						</div><br><br>
-						<nav style="display: flex;padding-left: 42%">
-							<a class="more" href="#">ALL SAGGESTIONS</a>
-							<a class="more" style="padding-left: 10px" href="#">WATCH FINDER</a>
-						</nav>
+						<div style="display: flex; margin-left: 42%;">
+							<a style="text-decoration: underline; padding: 20px 10px;"  href="find_your_OMEGA.php">ALL SAGGESTIONS</a>
+							<a style="text-decoration: underline; padding: 20px 10px;" href="watch_finder.php">WATCH FINDER</a>
+						</div>
                     </ul>
                 </li>
             </ul>
@@ -428,21 +501,21 @@
 			</button>
 	</div>
 	<!--footer-->
-	<div style="background:#E2DDDD" class="lienhe">
+		<div style="background:#E2DDDD" class="lienhe">
 		<div class="send_mail">
 			<h5>SUBSCRIBE TO OUR NEWSLETTER</h5><br>
 			<input type="text" style="background:white" placeholder="Enter your email address">
-			<input type="submit" value="SUBMIT"/>
+			<input id="send_mail" type="submit" value="SUBMIT"/>
 		</div>
 		<div class="lienket">
 			<h5>FOLLOW US</h5>
-			<div>
-				<a href="#"><i class="fab fa-instagram"></i></a>
-				<a href="#"><i class="fab fa-facebook-f"></i></a>
-				<a href="#"><i class="fab fa-twitter"></i></a>
-				<a href="#"><i class="fab fa-youtube"></i></a>
-				<a href="#"><i class="fab fa-weixin"></i></a>
-				<a href="#"><i class="fab fa-pinterest-square"></i></a>
+			<div style="color: #423E3E">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-youtube"></i>
+				<i class="fab fa-weixin"></i>
+				<i class="fab fa-pinterest-square"></i>
 			</div>
 		</div>
 	</div>

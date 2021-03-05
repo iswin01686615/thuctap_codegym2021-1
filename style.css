@@ -317,8 +317,51 @@ button{
 	padding: 5px 20px;
 	cursor: pointer
 }
+ul.item{
+	margin-top: 10px;
+}
+.item button{
+	margin: 10px;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.item a{
+	font-size: 13px;
+}
 
-
+.left_watch_finder{
+	width: 20%;
+	margin: 100px 50px;
+}
+.right_watch_finder{
+	width:80%;
+	background: #D9B8B9;
+}
+.item_watch{
+	border-top: 1px solid #726E6E;
+	padding: 20px 10px;
+}
+.left_watch_finder button{
+	background: #E8E8E8;
+	margin: 5px;
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+.left_watch_finder button:hover{
+	color: #6D0001;
+}
+.search_finder{
+	width: 7%;
+	border-left: 2px solid #6A6A6A;
+	line-height: 60px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+a.search_finder:hover{
+	color: #840002;
+}
 /* Mobile <740px */
 @media only screen and (max-width: 46.1875em){
 	.main2{
@@ -806,14 +849,17 @@ h1{
 }
 #accordion section ul{
 	display: none;
-	text-align: center;
+}
+#accordion section ul li{
+	padding-left: 30px;
 }
 #accordion section a{
-	color: black;
+	color: #494949;
 	text-decoration: none;
 }
 #accordion section a:hover{
 	text-decoration: underline;
+	color: #820002;
 }
 #accordion section:target ul{
 	display: block;
@@ -833,4 +879,66 @@ td{
 	width: 80%;
 	height: 900px;
 	margin: 0px auto;
+}
+
+/*left_finder*/
+.sub-menu ul{
+	margin-top: 10px;
+}
+.sub-menu ul li{
+	padding: 10px 20px;
+	display: none;
+}
+.sub-menu ul:target li{
+	display: block;
+}
+
+
+
+#accordion1{
+	width: 100%;
+}
+#accordion1 section{
+	padding: 10px 40px;
+}
+#accordion1 section ul{
+	display: none;
+}
+#accordion1 section ul li{
+	padding-left: 30px;
+}
+#accordion1 section a{
+	color: #494949;
+	text-decoration: none;
+}
+#accordion1 section a:hover{
+	text-decoration: underline;
+	color: #820002;
+}
+#accordion1 section:target ul{
+	display: block;
+}
+
+
+#wapper_f{
+	max-width: 300px;
+}
+.accordion_f-header{
+	background: #E1DCDC;
+	padding: 20px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.accordion_f-item.active .accordion_f-header{
+	color: #7B0002;
+}
+.accordion_f-item.active .arrow{
+	transform: rotate(180deg);
+}
+.accordion_f-body{
+	padding: 20px 20px;
+	display: none;
 }
