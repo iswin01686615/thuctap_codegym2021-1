@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!doctype html>
 <html>
 <head>
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-	
+	<form method="POST">
 	<div class="nav_top">
 		<div class="nav_t_l">
 			<div class="nav">
@@ -118,7 +120,7 @@
             </div>
 		</div>
 		<div class="nav_t_c">
-			<a href="index.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
+			<a href="index.php"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 		</div>
 		<div class="nav_t_r" style="text-align: right; padding-right: 20px">
 			<div class="search-box">
@@ -324,37 +326,37 @@
 				<td><input type="radio" name="gt">Mrs</td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="text" placeholder="First Name*"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="text" placeholder="First Name*" name="Firt"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="text" placeholder="Last Name*"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="text" placeholder="Last Name*" name="Last"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="email" placeholder="Email*"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="email" placeholder="Email*" name="acc"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="password" placeholder="Password*"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="password" placeholder="Password*" name="pw"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="password" placeholder="Confirm Password*"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="password" placeholder="Confirm Password*" name="repw"></td>
 			</tr>
 			<tr>
 				<td style="text-decoration: underline; font-family: 'Overlock', cursive; ">Date of Birth:</td>
 			</tr>
 			<tr>
-				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="date"></td>
+				<td colspan="3"><input style="width: 100%; height: 30px; padding-left: 10px" type="date" name="day"></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input type="checkbox">I agree that OMEGA sends me its newsletter via email and consent that OMEGA processes my personal data for this purpose. I confirm to have read and understood the Privacy Notice. I can always unsubscribe by clicking the opt-out link in the email.</td>
+				<td colspan="3"><input type="checkbox" name="check">I agree that OMEGA sends me its newsletter via email and consent that OMEGA processes my personal data for this purpose. I confirm to have read and understood the Privacy Notice. I can always unsubscribe by clicking the opt-out link in the email.</td>
 			</tr>
 			<tr>
-				<td colspan="3"><input type="checkbox">Accept Terms of Use* to create a My OMEGA account</td>
+				<td colspan="3"><input type="checkbox" name="check">Accept Terms of Use* to create a My OMEGA account</td>
 			</tr>
 			<tr>
-				<td colspan="3"><input type="checkbox">I have read the Privacy notice*</td>
+				<td colspan="3"><input type="checkbox" name="check">I have read the Privacy notice*</td>
 			</tr>
 			<tr>
-				<td colspan="3" align="center"><input style="width: 30%; height: 30px; background: #A40407; color: white; cursor: pointer; border-radius: 3px; border: none" type="submit" value="SUBMIT"></td>
+				<td colspan="3" align="center"><input style="width: 30%; height: 30px; background: #A40407; color: white; cursor: pointer; border-radius: 3px; border: none" type="submit" value="SUBMIT" name="OK"></td>
 			</tr>
 		</table>
 	</div>
@@ -475,7 +477,36 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="style.css">
-
+	</form>
 	
 </body>
+	<?php
+        include('Control.php');
+        if(isset($_POST['OK']))
+        {
+            if( empty($_POST['acc'])|| empty($_POST['pw']))
+                echo "<script> alert('Ban chua email hoac mk')</script>";
+            else{
+				if ($_POST['pw'] != $_POST['repw'])
+                echo "<script> alert('Mat khau khong trung nhau. Nhap lai!')</script>";
+            elseif(isset($_POST['check'])) 
+                {
+                    $user = new Account();
+                    $select = $user ->select_user($_POST['acc']);
+                    if($select==0)
+                    {
+                        $add_user=$user->Adduser($_POST['Firt'],$_POST['Last'],$_POST['acc'],$_POST['pw'],$_POST['day']);
+                        if($add_user) 
+                        	{echo "<script> alert('Tao tai khoan thanh cong')</script>";
+                        		echo "<script> alert(window.location='account.php')</script>";
+                        }
+                        else echo "<script> alert('Loi khong thuc hien duoc')</script>";
+                    }
+                    else echo "<script> alert('Account da ton tai')</script>";
+                }
+            else echo "<script> alert('Ban chua dong y dieu khoan')</script>";
+			}
+        }
+        
+    ?>
 </html>

@@ -117,7 +117,7 @@
             </div>
 		</div>
 		<div class="nav_t_c">
-			<a href="index.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
+			<a href="index.php"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 		</div>
 		<div class="nav_t_r" style="text-align: right; padding-right: 20px">
 			<div class="search-box">

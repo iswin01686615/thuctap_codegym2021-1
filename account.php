@@ -1,3 +1,5 @@
+<?php session_start();	?>
+
 <!doctype html>
 <html>
 <head>
@@ -314,6 +316,7 @@
 	
 	
 	<div class="account">
+		<form method="post">
 		<h1 style="color:#99080A; text-align: center">MY OMEGA</h1><br><br><br>
 		<table cellpadding="10px" cellspacing="30px">
 			<tr>
@@ -325,11 +328,11 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td><input style="width: 100%; height: 35px; padding-left: 10px" type="text" placeholder="Email*"></td>
+				<td><input style="width: 100%; height: 35px; padding-left: 10px" type="text" placeholder="Email*" name="acc"></td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><input style="width: 100%; height: 35px; padding-left: 10px" type="text" placeholder="Password*"></td>
+				<td><input style="width: 100%; height: 35px; padding-left: 10px" type="password" placeholder="Password*" name="pw"></td>
 				<td></td>
 			</tr>																						
 			<tr>
@@ -337,10 +340,45 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td><input style="width: 100%; height: 35px; background: white" type="submit" value="LOGIN"></td>
-				<td><a href="sign_up.html"><input style="width: 100%; height: 35px; background: white" type="submit" value="SIGN UP"></a></td>
+				<td><input style="width: 100%; height: 35px; background: white" type="submit" value="LOGIN" name="ready"></td>
+				<td><input style="width: 100%; height: 35px; background: white" type="submit" value="SIGN UP" name="dk"></td>
 			</tr>
 		</table>
+		</form>
+
+<?php
+    include('control.php');
+    if (isset($_POST['dk'])) {
+    	echo "<script> alert(window.location='sign_up.php')</script>";
+    }
+    if(isset($_POST['ready']))
+    {
+    $user= new Account();
+    
+        if( empty($_POST['acc']) || empty($_POST['pw']))
+            echo "<script> alert('Ban chua nhap du lieu')</script>";
+        else
+            {
+                $user = new Account();
+                $pass = new Account();
+                $login_user = $user ->login_user($_POST['acc']);
+                $login_pass = $pass ->login_pass($_POST['pw']);
+                $_SESSION['user']=$_POST['acc'];
+                if($login_user==0)
+                echo "<script> alert('Tai khoan khong ton tai')</script>";
+                else
+                {
+                   if($login_pass==0) echo "<script> alert('Sai mat khau')</script>";
+				   
+                   else
+				   {
+					   echo "<script> alert ('Dang nhap thanh cong')</script>";
+					   echo "<script> alert(window.location='index.php')</script>";
+				   }
+                }                
+            }    
+    }
+?>
 	</div>
 	
 	

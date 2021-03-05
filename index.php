@@ -1,3 +1,14 @@
+<?php
+		session_start();
+		include('control.php');
+		$acc = new Account();
+		$se_all=$acc->select_infor($_SESSION['user']);
+
+		$se=$acc->select_user($_SESSION['user']);
+
+		if (!isset($_SESSION['user'])) header('location:account.php');
+	?>
+
 <!doctype html>
 <html>
 <head>
@@ -117,7 +128,7 @@
             </div>
 		</div>
 		<div class="nav_t_c">
-			<a href="index.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
+			<a href="index.php"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 		</div>
 		<div class="nav_t_r" style="text-align: right; padding-right: 20px">
 			<div class="search-box">
@@ -579,5 +590,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<center><a href="Logout.php">thoat</center>
 </body>
 </html>
