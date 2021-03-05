@@ -54,10 +54,13 @@
 			<a href="deville.html"><img src="./img/logo_omega.png" title="Đồng hồ OMEGA thương hiệu cao cấp."></a>
 		</div>
 		<div class="nav_t_r" style="text-align: right; padding-right: 20px">
-			<a href="#"><i class="fa fa-search"></i></a>
+			<label for="nav-search">
+				<a href="#"><i class="fa fa-search"></i></a>
+			</label>
+			<input type="checkbox" hidden name="" class="nav__input1" id="nav-search">
 			<a href="#"><i class="fa fa-map-marker"></i></a>
 			<a href="account.html"><i class="fa fa-user"></i></a>
-		</div>
+        </div>
 	</div>
 	
 	<div class="wrapper">
@@ -238,7 +241,16 @@
             </ul>
         </nav>
 	</div>
-	
+		<div class="search">
+					<div class="accordion">
+						<div class="accordion-item">
+							<div style="position: relative" class="item">
+								<input type="search" placeholder="Search..." style="border-left:none;border-right: none;border-top: none;width: 60%; height: 30px; font-size: 25px;margin-top: 20px;border-bottom: 1px solid #A69F9F;">
+								<i id="search_" class="fa fa-search"></i>
+						    </div>
+					  	</div>
+					</div>
+		</div>
 	
 	<div class="sign_up">
 		<h1 style="color:#99080A; text-align: center">SIGN UP</h1><br><br><br>
