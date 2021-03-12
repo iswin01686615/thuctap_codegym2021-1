@@ -41,7 +41,7 @@
         public function select_infor($session)
         {
             global $conn;
-            $sql ="select * from information where Email='$session'"; 
+            $sql ="select * from account where Email='$session'"; 
             $run=mysqli_query($conn,$sql);
             $data=array();
             if($run)
@@ -54,5 +54,70 @@
             }
             return $data;
         }
+
+        public function ht_Thongtin()
+        {
+            global $conn;
+            $sql = "select * from account";
+            $arr = array();
+            $run = mysqli_query($conn, $sql);
+            if($run)
+            {
+                while($row = mysqli_fetch_array($run))
+                $arr[] = $row;
+            }
+            return $arr;
+        }
+
+
+        public function Update($acc,$pw)
+        {
+            global $conn;
+            $sql="update account set Password='$pw' where Email='$acc'";
+            $run= mysqli_query($conn,$sql);
+            return $run;
+        }
+    public function select_pw($user)
+        {
+            global $conn;
+            $sql ="select * from account where Email='$user'";
+            $run=mysqli_query($conn,$sql);
+            $data=array();
+            if($run)
+            {
+                while($row=mysqli_fetch_array($run))
+                {
+                    $data[]=$row;
+                }
+
+            }
+            return $data;
+        }
+//update account
+        public function sl_ac($table, $Email)
+		{
+			global $conn;
+			$sql = "select * from $table where Email='$Email'";
+			$arr = array();
+			$run = mysqli_query($conn, $sql);
+			if($run)
+			{
+				while($row = mysqli_fetch_array($run))
+				$arr[] = $row;
+			}
+			return $arr;
+		}
+		public function update_ac($Firtname, $Lastname, $Birthday, $Email) {
+			global $conn;
+			$sql = "Update account Set Firtname='$Firtname', Lastname='$Lastname', Birthday='$Birthday' where Email='$Email'";
+			$run = mysqli_query($conn,$sql);
+			if($run)
+			{
+				return true;
+			}
+			else
+				return false;
+		}
+
     }
 ?>
